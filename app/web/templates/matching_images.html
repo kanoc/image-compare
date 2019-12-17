@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+
+{% block matches %}
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <h3>Your uploaded image</h3>
+            <div class="row">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top" src="{{ url_for('image', filename=base_image.filename) }}">
+                </div>
+            </div>
+            <hr class="mb-4">
+            {% if matching_images %}
+                <h3>Are these images a good match?</h3>
+                <div class="row">
+                    {% for matching_image in matching_images %}
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top" src="{{ url_for('image', filename=matching_image.filename) }}">
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <h3>No matches yet. Upload more images!</h3>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

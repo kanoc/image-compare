@@ -1,0 +1,5 @@
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=secret_postgres_pass
+POSTGRES_DB=image_compare
+APP_SECRET_KEY=veryverysecret
+UPLOAD_FOLDER=/opt/services/images

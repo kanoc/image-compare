@@ -1,0 +1,8 @@
+Flask
+Flask-SQLAlchemy
+psycopg2-binary
+opencv-python-headless
+scipy
+imageio
+invoke>=1.3.0
+pip-tools

@@ -1,0 +1,27 @@
+version: '3'
+services:
+  db:
+    image: 'postgres:latest'
+    volumes:
+      - 'dbdata:/var/lib/postgresql/data'
+    env_file:
+      - env_file
+    networks:
+      - db_nw
+  app:
+    build: .
+    env_file:
+      - env_file
+    ports:
+      - "9009:9009"
+    volumes:
+      - .:/opt/services/image_compare
+    networks:
+      - db_nw
+    depends_on:
+      - db
+networks:
+  db_nw:
+    driver: bridge
+volumes:
+  dbdata:
