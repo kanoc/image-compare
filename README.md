@@ -80,3 +80,5 @@ some other basic image info)
 2. After the image is saved, the feature vector of the newly uploaded image is compared to all other existing feature
 vectors in the database (by measuring the "spatial" cosine distance between the feature vectors), and the 3 best matches
 are shown on the UI.
+
+The results are pretty average at best, but it was a fun ride!
