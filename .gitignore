@@ -1,4 +1,4 @@
 .coverage
-.mypy_cache
-.pytest_cache
-.idea
+.mypy_cache/
+.pytest_cache/
+.idea/

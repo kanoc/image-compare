@@ -32,7 +32,7 @@ def pin_deps(ctx):
 
 @task
 def pin_dev_deps(ctx):
-    """"Pin the dependencies."""
+    """"Pin the dev dependencies."""
 
     with ctx.cd(os.path.dirname(__file__)):
         ctx.run('pip-compile --generate-hashes requirements-dev.in')
