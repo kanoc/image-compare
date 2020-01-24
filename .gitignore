@@ -1,4 +1,23 @@
-.coverage
+# mypy
 .mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+coverage.xml
+*.cover
+*.py,cover
 .pytest_cache/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE-s
 .idea/
+.vscode/
