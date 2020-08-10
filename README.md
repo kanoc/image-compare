@@ -29,7 +29,7 @@ $ docker-compose up -d
 To run the tests in a virtual env:
 1. Create a virtual env with `virtualenv`:
    ```bash
-   mkvirtualenv -p /usr/bin/python3.7 image-compare
+   mkvirtualenv -p /usr/bin/python3 image-compare
    ```
 2. Install the dependencies:
    ```bash
